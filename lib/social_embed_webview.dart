@@ -57,7 +57,7 @@ class _SocialEmbedState extends State<SocialEmbed> with WidgetsBindingObserver {
   Widget build(BuildContext context) {
     final wv = WebView(
         initialUrl: htmlToURI(getHtmlBody()),
-        userAgent: Platform.isIOS ? "Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E217":"Mozilla/5.0 (Linux; Android 5.1.1; Android SDK built for x86 Build/LMY48X) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36"
+        userAgent: Platform.isIOS ? "Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E217":"Mozilla/5.0 (Linux; Android 5.1.1; Android SDK built for x86 Build/LMY48X) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36",
         javascriptChannels:
             <JavascriptChannel>[_getHeightJavascriptChannel()].toSet(),
         javascriptMode: JavascriptMode.unrestricted,
